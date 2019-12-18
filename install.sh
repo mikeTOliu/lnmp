@@ -11,7 +11,7 @@ fi
 cur_dir=$(pwd)
 Stack=$1
 if [ "${Stack}" = "" ]; then
-    Stack="lnmp"
+    Stack="lnp"
 else
     Stack=$1
 fi
@@ -222,8 +222,11 @@ case "${Stack}" in
     mphp)
         Install_Multiplephp
         ;;
+    lnp)
+        Install_Only_Nginx 2>&1 | tee /root/nginx-install.log | Install_Multiplephp
+        ;;
     *)
-        Echo_Red "Usage: $0 {lnmp|lnmpa|lamp}"
+        Echo_Red "Usage: $0 {lnmp|lnmpa|lamp|lnp}"
         Echo_Red "Usage: $0 {nginx|db|mphp}"
         ;;
 esac

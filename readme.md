@@ -180,6 +180,8 @@ MariaDB 10.3 | 10 | PHP 7.4 | 10 | | | |
 |Enable_PHP_Fileinfo|是否安装开启php的fileinfo模块|默认n，根据自己情况而定，安装启用的话改成 y|
 |Enable_Nginx_Lua|是否为Nginx安装lua支持|默认n，安装lua可以使用一些基于lua的waf网站防火墙|
 
+# 增加lnp模式，默认模式改为lnp(自用)
+
 ## 技术支持
 
 **技术支持论坛：<https://bbs.vpser.net/forum-25-1.html>**
